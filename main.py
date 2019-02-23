@@ -3,7 +3,6 @@ from multiprocessing import Pool
 import subprocess
 import time
 import json
-from pathlib import Path
 
 
 class convert:
@@ -107,7 +106,7 @@ class convert:
 
     def track(self, p):
         '''
-        tracking interface to show how many processes are going on and success of each.
+        tracking interface to show how many processes are running.
         '''
 
         while True:
