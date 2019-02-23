@@ -6,8 +6,15 @@ git:
   depth: 25
   quiet: true
 
+addons:
+  apt:
+    packages: ffmpeg
+
+install: pip install -e .
+
 python:
 - 3.7
 
 script:
 - flake8 --extend-ignore=W,E1,E2,E3,E5
+- pytest -v
