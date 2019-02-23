@@ -10,6 +10,7 @@ def test_duration():
         assert induration == approx(outduration)
         induration, outduration = ins.ffprobe(name[0], name[2])
         assert induration == approx(outduration)
+    print("All files are converted successfully!")
 
 if __name__ == '__main__':
     test_duration()
